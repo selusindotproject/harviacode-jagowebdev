@@ -63,7 +63,7 @@ if (isset($_POST['generate']))
             include 'core/create_libraries_datatables.php';
         }
         include 'core/create_view_form.php';
-        include 'core/create_view_read.php';
+        // include 'core/create_view_read.php';
 
         $export_excel == 1 ? include 'core/create_exportexcel_helper.php' : '';
         $export_word == 1 ? include 'core/create_view_list_doc.php' : '';
