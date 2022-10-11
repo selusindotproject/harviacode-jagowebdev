@@ -14,6 +14,8 @@ class " . $c . " extends \App\Controllers\BaseController
         \$this->model = new ".$c."Model;
 		\$this->data['site_title'] = '".$c."';
 		\$this->addJs(\$this->config->baseURL.'public/themes/modern/js/form-ajax.js');
+        \$this->addJs(\$this->config->baseURL.'public/vendors/flatpickr/dist/flatpickr.js');
+		\$this->addStyle(\$this->config->baseURL.'public/vendors/flatpickr/dist/flatpickr.min.css');
     }
 
     public function index()
