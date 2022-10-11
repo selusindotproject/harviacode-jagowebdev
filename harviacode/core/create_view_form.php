@@ -1,7 +1,8 @@
 <?php
 
 $string2 =
-"<form method=\"post\" action=\"\" class=\"form-horizontal p-3\">
+"<?php helper('html') ?>
+<form method=\"post\" action=\"\" class=\"form-horizontal p-3\">
 	<div>";
 
     foreach ($non_pk as $row) {
